@@ -1,16 +1,16 @@
 import express from 'express';
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
+// import cookieParser from 'cookie-parser';
+// import cors from 'cors';
 
 
 const app = express();
 
 app.use(express.json());
 
-app.use(cookieParser());
+// app.use(cookieParser());
 
 app.get("/", (req, res) => {
-    res.send("✅ FoundIt API is running...");
+    res.send("✅ Book-It API is running...");
 });
 
 const PORT = process.env.PORT || 5000;
